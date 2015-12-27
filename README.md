@@ -2,6 +2,14 @@
 Windows 10 styled, customizable Hamburger Menu control for WPF
 
 # Getting Started
+
+## Install
+From nuget:
+```
+Install-Package HamburgerMenu 
+```
+
+## Use
 Add library reference in xaml:
 ```
 xmlns:HamburgerMenu="clr-namespace:HamburgerMenu;assembly=HamburgerMenu"
