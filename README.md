@@ -1,6 +1,8 @@
 # HamburgerMenu
 Windows 10 styled, customizable Hamburger Menu control for WPF
 
+![Animation](http://i.imgur.com/ReTRU2E.gif "Animation")
+
 # Getting Started
 
 ## Install
