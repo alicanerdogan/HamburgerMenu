@@ -10,11 +10,11 @@
     <Grid Background="Aquamarine">
         <HamburgerMenu:HamburgerMenu Background="Blue" MenuIconColor="White" SelectionIndicatorColor="White" MenuItemForeground="White" HorizontalAlignment="Left">
             <HamburgerMenu:HamburgerMenu.Content>
-                <HamburgerMenu:HamburgerMenuItem Icon="Assets/home.png" Text="Home" SelectionCommand="{Binding ElementName=this_}"/>
-                <HamburgerMenu:HamburgerMenuItem Icon="Assets/search.png" Text="Search"/>
-                <HamburgerMenu:HamburgerMenuItem Icon="Assets/favorite.png" Text="Likes"/>
-                <HamburgerMenu:HamburgerMenuItem Icon="Assets/list.png" Text="Lists"/>
-                <HamburgerMenu:HamburgerMenuItem Icon="Assets/person.png" Text="Profile"/>
+                <HamburgerMenu:HamburgerMenuItem Icon="&#xE8AF;" Text="Home" SelectionCommand="{Binding ElementName=this_}"/>
+                <HamburgerMenu:HamburgerMenuItem Icon="&#xE8AF;" Text="Search"/>
+                <HamburgerMenu:HamburgerMenuItem Icon="&#xE8AF;" Text="Likes"/>
+                <HamburgerMenu:HamburgerMenuItem Icon="&#xE8AF;" Text="Lists"/>
+                <HamburgerMenu:HamburgerMenuItem Icon="&#xE8AF;" Text="Profile"/>
             </HamburgerMenu:HamburgerMenu.Content>
         </HamburgerMenu:HamburgerMenu>
     </Grid>
