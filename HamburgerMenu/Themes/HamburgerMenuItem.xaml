@@ -29,7 +29,10 @@
                                         <TextBlock Text="{TemplateBinding Text}" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Segoe UI Light" FontSize="18" Foreground="{TemplateBinding Foreground}" TextWrapping="Wrap"/>
                                     </Grid>
                                     <Grid Grid.Column="0">
-                                        <Image Source="{TemplateBinding Icon}" Margin="10,5,5,5"/>
+                                         <TextBlock Margin="10,5,5,5"
+                                                   FontFamily="Segoe MDL2 Assets"
+                                                   FontSize="22"
+                                                   Text="{TemplateBinding Icon}" />
                                     </Grid>
                                 </Grid>
                             </Grid>
