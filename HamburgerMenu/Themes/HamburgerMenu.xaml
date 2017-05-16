@@ -26,7 +26,7 @@
                         <ToggleButton x:Name="menuIcon" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="50" IsChecked="{Binding RelativeSource={RelativeSource AncestorType={x:Type local:HamburgerMenu}}, Path=IsOpen}">
                             <Path HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Width="30" Fill="{TemplateBinding MenuIconColor}" Data="M2,15.5L22,15.5 22,17.5 2,17.5 2,15.5z M2,10.5L22,10.5 22,12.5 2,12.5 2,10.5z M2,5.5L22,5.5 22,7.5 2,7.5 2,5.5z"/>
                         </ToggleButton>
-                        <ListBox ItemsSource="{TemplateBinding Content}" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0"/>
+                        <ListBox ItemsSource="{TemplateBinding Content}" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="{TemplateBinding SelectedIndex}"/>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

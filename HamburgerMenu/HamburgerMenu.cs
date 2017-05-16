@@ -72,5 +72,14 @@ namespace HamburgerMenu
 
         public static readonly DependencyProperty MenuItemForegroundProperty =
             DependencyProperty.Register("MenuItemForeground", typeof(Brush), typeof(HamburgerMenu), new PropertyMetadata(Brushes.Transparent));
+
+        public int SelectedIndex
+        {
+            get { return (int)GetValue(SelectedIndexProperty); }
+            set { SetValue(SelectedIndexProperty, value); }
+        }
+
+        public static readonly DependencyProperty SelectedIndexProperty =
+            DependencyProperty.Register("SelectedIndex", typeof(int), typeof(HamburgerMenu), new PropertyMetadata(0));
     }
 }
