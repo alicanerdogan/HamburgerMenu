@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,14 +12,14 @@ namespace HamburgerMenu
 {
     public class HamburgerMenu : ContentControl
     {
-        public new List<HamburgerMenuItem> Content
+        public new ObservableCollection<HamburgerMenuItem> Content
         {
-            get { return (List<HamburgerMenuItem>)GetValue(ContentProperty); }
+            get { return (ObservableCollection<HamburgerMenuItem>)GetValue(ContentProperty); }
             set { SetValue(ContentProperty, value); }
         }
 
         public new static readonly DependencyProperty ContentProperty =
-            DependencyProperty.Register("Content", typeof(List<HamburgerMenuItem>), typeof(HamburgerMenu),
+            DependencyProperty.Register("Content", typeof(ObservableCollection<HamburgerMenuItem>), typeof(HamburgerMenu),
             new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.AffectsRender | FrameworkPropertyMetadataOptions.AffectsMeasure));
 
         static HamburgerMenu()
@@ -28,7 +29,7 @@ namespace HamburgerMenu
 
         public override void BeginInit()
         {
-            Content = new List<HamburgerMenuItem>();
+            Content = new ObservableCollection<HamburgerMenuItem>();
             base.BeginInit();
         }
 
